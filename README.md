@@ -1,3 +1,5 @@
+READ ME and MAJORITY OF SRC FROM https://github.com/mdeyo/alexa-node-ROS
+
 # alexa-node-ROS
 Connecting Alexa Skills to node.js to ROS.
 

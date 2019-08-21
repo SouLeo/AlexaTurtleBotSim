@@ -21,7 +21,8 @@ app.intent("tutleIntent", {
     "slots": {"NAME": "LITERAL", "DIRECTION": "LITERAL", "SPEED": "NUMBER"},
     "utterances": ["{names|NAME} go {direction| DIRECTION} at  {1-100| SPEED}"]
 },  function(req, res) {
-      console.log(req.slot("NAME"));
+    console.log(JSON.stringify(req.data,null,3)); // look at the README.txt in node_modules/alexa_app
+    console.log(req.slot("NAME"));
       var fast = req.slot("SPEED");
       var fast_float = parseFloat(fast);
       console.log('publish-example: PublishTwistIntent - publishing Twist...')
